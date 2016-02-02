@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="longtbps02856ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="longtbps02856ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Cloud_Ps02856.My.MySettings.GlobalReference.Default.longtbps02856ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="longtbps02856ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HOA_DON.MA_SANPHAM, HOA_DON.MA_KH, CHITIET_HD.CHITIET_HD, CHITIET_HD.NGAY_THANHTOAN, CHITIET_HD.HINH_THUC, HOA_DON.CHITIET_HD AS XN_CHITIETHD
+FROM            CHITIET_HD INNER JOIN
+                         HOA_DON ON CHITIET_HD.CHITIET_HD = HOA_DON.CHITIET_HD</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MA_SANPHAM" DataSetColumn="MA_SANPHAM" />
+              <Mapping SourceColumn="MA_KH" DataSetColumn="MA_KH" />
+              <Mapping SourceColumn="CHITIET_HD" DataSetColumn="CHITIET_HD" />
+              <Mapping SourceColumn="NGAY_THANHTOAN" DataSetColumn="NGAY_THANHTOAN" />
+              <Mapping SourceColumn="HINH_THUC" DataSetColumn="HINH_THUC" />
+              <Mapping SourceColumn="XN_CHITIETHD" DataSetColumn="XN_CHITIETHD" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MA_SANPHAM" msprop:Generator_ColumnVarNameInTable="columnMA_SANPHAM" msprop:Generator_ColumnPropNameInRow="MA_SANPHAM" msprop:Generator_ColumnPropNameInTable="MA_SANPHAMColumn" msprop:Generator_UserColumnName="MA_SANPHAM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MA_KH" msprop:Generator_ColumnVarNameInTable="columnMA_KH" msprop:Generator_ColumnPropNameInRow="MA_KH" msprop:Generator_ColumnPropNameInTable="MA_KHColumn" msprop:Generator_UserColumnName="MA_KH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHITIET_HD" msprop:Generator_ColumnVarNameInTable="columnCHITIET_HD" msprop:Generator_ColumnPropNameInRow="CHITIET_HD" msprop:Generator_ColumnPropNameInTable="CHITIET_HDColumn" msprop:Generator_UserColumnName="CHITIET_HD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAY_THANHTOAN" msprop:Generator_ColumnVarNameInTable="columnNGAY_THANHTOAN" msprop:Generator_ColumnPropNameInRow="NGAY_THANHTOAN" msprop:Generator_ColumnPropNameInTable="NGAY_THANHTOANColumn" msprop:Generator_UserColumnName="NGAY_THANHTOAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HINH_THUC" msprop:Generator_ColumnVarNameInTable="columnHINH_THUC" msprop:Generator_ColumnPropNameInRow="HINH_THUC" msprop:Generator_ColumnPropNameInTable="HINH_THUCColumn" msprop:Generator_UserColumnName="HINH_THUC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="XN_CHITIETHD" msprop:Generator_ColumnVarNameInTable="columnXN_CHITIETHD" msprop:Generator_ColumnPropNameInRow="XN_CHITIETHD" msprop:Generator_ColumnPropNameInTable="XN_CHITIETHDColumn" msprop:Generator_UserColumnName="XN_CHITIETHD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:MA_SANPHAM" />
+      <xs:field xpath="mstns:MA_KH" />
+      <xs:field xpath="mstns:CHITIET_HD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
