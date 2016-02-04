@@ -27,7 +27,7 @@ Partial Class frmlogin
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
-        Me.txtUserId = New System.Windows.Forms.TextBox()
+        Me.txtuser = New System.Windows.Forms.TextBox()
         Me.lblUserid = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.ptbUser = New System.Windows.Forms.PictureBox()
@@ -79,16 +79,16 @@ Partial Class frmlogin
         Me.lblPassword.TabIndex = 23
         Me.lblPassword.Text = "Mật Khẩu"
         '
-        'txtUserId
+        'txtuser
         '
-        Me.txtUserId.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtUserId.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserId.Location = New System.Drawing.Point(283, 280)
-        Me.txtUserId.Multiline = True
-        Me.txtUserId.Name = "txtUserId"
-        Me.txtUserId.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.txtUserId.Size = New System.Drawing.Size(369, 49)
-        Me.txtUserId.TabIndex = 22
+        Me.txtuser.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtuser.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtuser.Location = New System.Drawing.Point(283, 280)
+        Me.txtuser.Multiline = True
+        Me.txtuser.Name = "txtuser"
+        Me.txtuser.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
+        Me.txtuser.Size = New System.Drawing.Size(369, 49)
+        Me.txtuser.TabIndex = 22
         '
         'lblUserid
         '
@@ -143,7 +143,7 @@ Partial Class frmlogin
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.lblPassword)
-        Me.Controls.Add(Me.txtUserId)
+        Me.Controls.Add(Me.txtuser)
         Me.Controls.Add(Me.lblUserid)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.ptbUser)
@@ -162,7 +162,7 @@ Partial Class frmlogin
     Friend WithEvents btnLogin As Button
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents lblPassword As Label
-    Friend WithEvents txtUserId As TextBox
+    Friend WithEvents txtuser As TextBox
     Friend WithEvents lblUserid As Label
     Friend WithEvents lblTitle As Label
     Friend WithEvents ptbUser As PictureBox
